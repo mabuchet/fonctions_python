@@ -3,7 +3,7 @@ Fonctions python personnelles, surtout destinées à du traitement de données s
 
 Liste des fichiers et des fonctions :
 
-- fichier 'format_scientifique.py' :
+- 'format_scientifique.py' :
     
   Fonctions :
 
