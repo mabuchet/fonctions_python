@@ -114,6 +114,16 @@ while b :
 
 # Tests de format_scientifique :
 print('\n\nTests de format_scientifique :\n')
+
+CS = False
+while not CS :
+    try :
+        consigne = 'Entrez un nombre de chiffres significatifs '
+        consigne += '(nombre entier positif) :'
+        CS = int(input(consigne))
+    except ValueError :
+        print("Attention, ce n'est pas un nombre entier !") 
+    
 b = True
 while b :
     try : 
@@ -124,8 +134,8 @@ while b :
         continue
     print(x)
     print(dx)
-    print(format_scientifique(x,dx))
-    print(format_scientifique(x,dx,fmt='NIST'))
+    print(format_scientifique(x,dx,CS=CS))
+    print(format_scientifique(x,dx,CS=CS,fmt='NIST'))
     val=input('On continue ?')
     if val in exit_values : b=False
 
@@ -142,7 +152,7 @@ while b :
     print(x)
     print(dx)
     if x<dx : print('Attention, x<dx')
-    print(format_scientifique(x,dx))
-    print(format_scientifique(x,dx,fmt='NIST'))
+    print(format_scientifique(x,dx,CS=CS))
+    print(format_scientifique(x,dx,CS=CS,fmt='NIST'))
     val=input('On continue ?')
     if val in exit_values : b=False
