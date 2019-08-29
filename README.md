@@ -3,9 +3,11 @@ Fonctions python personnelles, surtout destinées à du traitement de données s
 
 Liste des fichiers et des fonctions :
 
-format_scientifique.py
+- fichier 'format_scientifique.py' :
+    
+  Fonctions :
 
-    puissance_de_dix : renvoie la puissance de 10 associée à l'écriture scientifique d'un nombre décimal
+  - 'puissance_de_dix' : renvoie la puissance de 10 associée à l'écriture scientifique d'un nombre décimal
 
-    format_scientifique : génère une chaine caractère correspondant à un nombre écrit au format scientifique en tenant compte de son incertitude
+  - 'format_scientifique' : génère une chaine caractère correspondant à un nombre écrit au format scientifique en tenant compte de son incertitude
     
